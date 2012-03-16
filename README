@@ -1,0 +1,28 @@
+Utils for AS3 Development.
+Author: Alan Reyes AKA "Kutt Katrea" <kutt.katrea@kgdesignes.net>
+
+Currently, there is only the Console class which lets you forward debbugging 
+messages to Firebug Console.
+
+To use this class you must copy the lib/net.kgdesignes.utils.swc file to your lib
+folder in your AS3 project, and import the class "net.kgdesignes.utils.Console"
+After that, you can use this class statically:
+
+Console.log('Your debbugging message here');
+
+When sending to Firebug, the Console class will prepend a "[FLASH]" label, to the
+message, to know where it come from.
+
+To manually compile the library, you need to have in your PATH environment variable
+the Flex SDK's bin directory.
+If you don't have it (and yoou don't want to add it globally) you can create a file
+called 'build-uservars.bat' or 'build-uservars.sh' (depending of your OS) and write
+in it an instruction like:
+
+set PATH=C:\PATH\TO\FLEX\SDK\bin;%PATH%
+(Windows)
+
+export PATH=/path/to/flex/sdk/bin/:$PATH
+(Linux)
+
+Then, run the build.bat/build.sh script. 

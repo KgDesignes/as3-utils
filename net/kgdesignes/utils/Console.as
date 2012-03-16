@@ -30,6 +30,7 @@ package net.kgdesignes.utils {
         }
 
         private static function send(func:String, args:Array):void {
+            trace(args);
             args.unshift(func, LABEL);
             ExternalInterface.call.apply(null, args);
         }
