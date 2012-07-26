@@ -1,3 +1,5 @@
-!.gitignore
+.gitignore
 build-uservars.bat
 build-uservars.sh
+.*
+

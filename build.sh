@@ -10,7 +10,7 @@ fi
 
 echo "Building lib..."
 
-compc -include-sources ./net/kgdesignes -output lib/net.kgdesignes.utils.swc
+compc -include-sources ./src/ -output ./bin/net.kgdesignes.utils.swc
 
 echo "Library built to lib\net.kgdesignes.utils.swc"
 echo ""
